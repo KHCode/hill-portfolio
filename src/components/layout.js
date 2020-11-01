@@ -8,10 +8,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-
+import Head from "./head";
 import Nav from "./nav";
-// import GlobalStyle from "../styles/GlobalStyle";
-import '../styles/layout.css';
+import GlobalStyle from "../styles/GlobalStyle";
+import styled from "styled-components";
+// import '../styles/layout.css';
+
+const StyledContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,23 +33,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      
-        <Nav siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      
+      <Head />
+      <div id="root">
+        <GlobalStyle />
+        <StyledContent>
+          <Nav />
+            <div>{children}</div>
+            <footer>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </footer>
+        </StyledContent>
+        
+      </div>
     </>
   )
 }

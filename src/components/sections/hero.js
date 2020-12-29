@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCommentAlt, faLaptopCode, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
+import { faCommentAlt, faLaptopCode, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 
 
 const StyledHeroSection = styled.section`
@@ -117,8 +117,11 @@ const Hero = () => {
         <StyledHeroSection>
             <div className="hero-hello">hello!</div>
             <h2>my name is <span className="my-name">kris hill</span> and I like to...</h2>
-            <h3><span><FontAwesomeIcon icon={faLaptopCode} /><span className="like-tos">write code</span></span><span><FontAwesomeIcon icon={faCommentAlt} /><span className="like-tos">share knowledge</span></span><span><FontAwesomeIcon icon={faPuzzlePiece} /><span className="like-tos">solve puzzles</span></span></h3>
-            ${'' /* <div className="mini-bio"><p>I am a software developer, soon to be based out of Seattle. I have a background in education, visual arts, and history.</p></div> */}
+            <h3>
+                <span><FontAwesomeIcon icon={faLaptopCode} /><span className="like-tos">build things</span></span>
+                <span><FontAwesomeIcon icon={faCommentAlt} /><span className="like-tos">collaborate</span></span>
+                <span><FontAwesomeIcon icon={faPuzzlePiece} /><span className="like-tos">solve problems</span></span>
+            </h3>
         </StyledHeroSection>
     )
 }

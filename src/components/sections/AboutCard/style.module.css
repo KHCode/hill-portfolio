@@ -1,0 +1,24 @@
+@import "../../../colors.module.css";
+@import "../../../fonts.module.css";
+
+.container{
+    font-family: var(--FONT-SANS);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title{
+    font-family: var(--FONT-CURSIVE);
+    color: var(--BRIGHT-PINK);
+}
+
+.content{
+    margin: 0 15rem;
+    padding: 2rem;
+    background-color: var(--BRIGHT-BLUE);
+    color: var(--DARK-BLUE);
+    border-radius: 3rem;
+}

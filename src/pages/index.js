@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Head from "../components/head"
 import Hero from "../components/sections/hero"
-import About from "../components/sections/about"
+import About from "../components/sections/AboutCard/index"
 import Projects from "../components/sections/projects"
 
 const IndexPage = () => (

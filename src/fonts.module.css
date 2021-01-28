@@ -1,0 +1,9 @@
+/* require('typeface-corben');
+require('typeface-play');
+require('typeface-lobster'); */
+
+:root{
+    --FONT-CURSIVE: 'Corben';
+    --FONT-SANS: 'Play';
+    --FONT-HERO: 'Lobster';
+}

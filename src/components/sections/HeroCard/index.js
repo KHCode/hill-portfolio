@@ -14,7 +14,7 @@ class HeroCard extends Component {
             <div className={styles.container}>
                 <div className={styles.heroHello}>hello!</div>
                 <h2>my name is <span className={styles.myName}>kris hill</span> and I like to...</h2>
-                <h3>
+                <h3 className={styles.interests}>
                     <span><FontAwesomeIcon icon={faLaptopCode} /><span className={styles.likeTos}>build things</span></span>
                     <span><FontAwesomeIcon icon={faCommentAlt} /><span className={styles.likeTos}>collaborate</span></span>
                     <span><FontAwesomeIcon icon={faPuzzlePiece} /><span className={styles.likeTos}>solve problems</span></span>

@@ -70,7 +70,7 @@ h2 {
     letter-spacing: 0.3rem;
 }
 
-h3 {
+.interests {
     margin: 0;
     padding: 0 16rem;
     color: var(--light-blue);

@@ -2,29 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import styles from './style.module.css';
 
-
-// const StyledAboutSection = styled.section`
-//     font-family: var(--font-sans);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     min-height: 100vh;
-
-//     .about-title {
-//         font-family: var(--font-cursive);
-//         color: var(--bright-pink);
-//     }
-
-//     .about-content {
-//         margin: 0 15rem;
-//         padding: 2rem;
-//         background-color: var(--bright-blue);
-//         color: var(--dark-blue);
-//         border-radius: 3rem;
-//     }
-// `;
-
 function About() {
     return (
         <div className={styles.container}>

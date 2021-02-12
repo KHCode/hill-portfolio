@@ -50,7 +50,7 @@ class ProjectsList extends Component {
                 <div className={styles.projectsLeadRow}>
                     {this.props.projects.map((project, index) => {
                         return <ProjectCard 
-                            projectKey={index}
+                            key={index}
                             title={project.title}
                             type={project.type}
                             description={project.description}

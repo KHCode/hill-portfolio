@@ -33,14 +33,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Head />
+      <Head title={"Kris Hill Portfolio"}/>
       <div id="root">
         <GlobalStyle />
         <StyledContent>
           <Nav />
             <div>{children}</div>
         </StyledContent>
-        
       </div>
     </>
   )
